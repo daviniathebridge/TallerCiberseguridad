@@ -7,5 +7,5 @@ Papel de Full Stack, Heroku y despliegue de app en Heroku
 | Teoría | Contenido |
 | ------------ | ------------- |
 | [Introducción](./teoria/introduccion.md) | Introducción a Full Stack  |
-| [Heroku](./teoria/heroku.md) | Heroku  |
+| [Heroku](./teoria/heroku.md) | Introducción a Heroku  |
 | [Despliegue](./teoria/despliegue.md) | Despliegue MERN en Heroku |
