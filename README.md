@@ -1,4 +1,4 @@
-# Taller Data 04/07/20222
+# Taller Data 08/07/20222
 
 Papel de Full Stack, Heroku y despliegue de app en Heroku
 
@@ -7,5 +7,5 @@ Papel de Full Stack, Heroku y despliegue de app en Heroku
 | Teoría | Contenido |
 | ------------ | ------------- |
 | [Introducción](./teoria/introduccion.md) | Introducción a Full Stack  |
-| [Heroku](./teoria/heroku.md) | Heroku y API JSON |
-| [Despliegue](./teoria/despliegue.md) | Heroku y API JSON |
+| [Heroku](./teoria/heroku.md) | Heroku  |
+| [Despliegue](./teoria/despliegue.md) | Despliegue MERN en Heroku |
