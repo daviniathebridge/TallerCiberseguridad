@@ -8,7 +8,7 @@
 
 # Despligue de nuestra aplicación MERN en Heroku
 
-![img](../../../../../assets/core/front/react/clase41/heroku.png)
+![img](../assets/heroku.png)
 
 Vamos a definir el procedimiento a seguir para hacer un despliegue de nuestra aplicación MERN en Heroku.
 
