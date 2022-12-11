@@ -20,9 +20,7 @@ Los JSON Web Tokens generalmente están formados por tres partes: un encabezado 
 Identifica qué algoritmo fue usado para generar la firma y es algo como esto: 
 
 ```
-
     header = '{"alg":"HS256","typ":"JWT"}'
-
 ```
 - alg: algoritmo
 - typ: tipo de token
@@ -31,10 +29,9 @@ Identifica qué algoritmo fue usado para generar la firma y es algo como esto:
 El contenido lleva la información de los permisos del token:
 
 ```
-
     payload = '{"loggedInAs":"admin","iat":1422779638}'
-
 ```
+
 - loggedInAs: permisos
 - iat: marca temporal que indica cuándo se creó el token (el estándar lo recomienda)
 

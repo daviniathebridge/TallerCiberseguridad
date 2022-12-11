@@ -9,14 +9,16 @@
 ![img](../assets/cookie.jpg)
 
 
-Las cookies (o 'galletas', en español) son pequeños archivos que las páginas web guardan (opcionalmente) en el navegador web del usuario, con el fin de guardar configuraciones y obtener otros datos (algunos sitios web las utilizan para recoger información sobre nuestros hábitos y preferencias de navegación, entre otras cosas).
+Las cookies son pequeños archivos que las aplicaciones web almacenan en el cliente (navegador del usuario), con el fin de guardar configuraciones y obtener otros datos (algunos sitios web las utilizan para recoger información sobre nuestros hábitos y preferencias de navegación, entre otras cosas).
+
+La principal cuestión interesante de esta herramienta es que son accesibles desde el cliente y el servidor.
 
 ## Crear una cookie
 
 Para usar Cookies en JavaScript en primer lugar hemos de comprobar si están activas en el navegador web del usuario, del siguiente modo:
 
-```javascript
- if( navigator.cookieEnabled == true ) {
+```js
+ if(navigator.cookieEnabled) {
     alert("El uso de cookies está activado");
 }
 else {
@@ -25,7 +27,7 @@ else {
  }
 ```
 
-Las Cookies se crean usando la propiedad cookie del objeto Document(), al cual debemos pasar una cadena indicando las siguientes secciones separadas con punto y coma, seguido de un espacio:
+Las Cookies se crean usando la propiedad cookie del objeto Document, al cual debemos pasar una cadena indicando las siguientes secciones separadas con punto y coma, seguido de un espacio:
 
 1. Nombre y valor de la cookie.
 2. Fecha de expiración.
@@ -33,7 +35,7 @@ Las Cookies se crean usando la propiedad cookie del objeto Document(), al cual d
 
 En el siguiente ejemplo creamos dos cookies:
 
-```javascript
+```js
 
 //SINTAXIS
 document.cookie = "nameCookie=value";"expires=Date"; "path=/"  
@@ -51,12 +53,12 @@ Para eliminar una cookie desde JavaScript se debe asignar una fecha de caducidad
 
 Por ejemplo, creamos la cookie con el identificador nombre y valor Miguel igual que antes:
 
-```javascript
+```js
 document.cookie = "nombre=Miguel";
 ```
 Si queremos eliminarla:
 
-```javascript
+```js
 document.cookie = "nombre=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
 
 // O con max-age
@@ -65,7 +67,7 @@ document.cookie = "nombre=; max-age=0";
 
 Al igual que ocurría con la modificación de cookies, para la eliminación el path y el dominio también tienen que coincidir:
 
-```javascript
+```js
 // Se crean dos cookies con el mismo identificador
 // para dos paths diferentes
 document.cookie = "nombre=Miguel; path=/noticias";
@@ -79,19 +81,19 @@ document.cookie = "nombre=; max-age=0; path=/noticias";
 
 Por ejemplo, podemos crear la siguiente cookie con identificador nombre y valor Miguel:
 
-```javascript
+```js
 document.cookie = "nombre=Miguel";
 ```
 
 Si queremos modificar el valor, por ejemplo cambiarlo por Juan:
 
-```javascript
+```js
 document.cookie = "nombre=Juan";
 ```
 
 Es importante tener en cuenta que si una cookie se crea para un dominio o para un path determinado y se quiere modificar, el dominio y el path han de coincidir. De lo contrario se crearán dos cookies diferentes válidas para cada path y dominio. Por ejemplo, imaginemos que estamos en «miweb.com/blog» (el valor predeterminado del path es en este caso /blog):
 
-```javascript
+```js
 // Supongamos que estamos en "miweb.com/blog"
 // y creamos las siguientes cookies
 
@@ -110,7 +112,7 @@ document.cookie = "nombre=Juan; path=/";
 Para acceder a las cookies usaremos también la propiedad cookies del Document(), con la que las obtendremos en una cadena de texto:
  
  
-```javascript
+```js
 var misCookies = document.cookie;
 document.write( "COOKIES: [" + misCookies + "]" );
 
@@ -131,7 +133,7 @@ Para leer el valor de cada sección de la cookie debemos obtener la parte de la 
 En el siguiente ejemplo creamos unas cookies y a continuación mostramos sus respectivos valores, a partir de la cadena obtenida:
 
 
-```javascript
+```js
 // Crear las Cookies:
    document.cookie = "miCookie=12;expires=Mon  25 Jun 2022 11:12:13 UTC;  path=/";
 document.cookie = "miCookie2=13;expires=Mon  26 Jun 2022 11:12:13 UTC;  path=/";
@@ -181,19 +183,6 @@ No se requiere de conexión a Internet para acceder a los datos.
 El almacenamiento en las cookies y en el LocalStorage tienen distintos propósitos. Como se ha comentado antes, las cookies pueden ser directamente leídas desde el servidor, en cambio, el LocalStorage solo guarda y permite leer los datos desde el cliente. Las cookies tienen un limite bastante más reducido de almacenamiento en comparación al LocalStorage y éste, técnicamente es más fácil de usar y te permite más con qué trabajar.
 
 Lo que determinaría si se debe o no usar un método u otro para almacenar y persistir los datos del usuario en el sitio web sería si se requiere de estos en el cliente o en el servidor.
-
-
-### Ejercicios
-
-Se necesita crear un aviso en nuestra página, que notifique a el usuario que se va a hacer **uso de cookies** en nuestra web , y para ello necesitamos:
-
-1. Crea un elemento div en el que el usuario pueda aceptar dichas condiciones
-
-2. Ese mensaje aparecerá en la web hasta que el usuario acepte.Una vez se produzca no mostrar el elemento.
-
-3. Además se require una caducidad de al menos 15 minutos, para comprobar que funciona bien vuestra lógica 
-
-
 
 FUENTES:
  

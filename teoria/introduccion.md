@@ -12,8 +12,8 @@
 1. **Frontend:** HTML, CSS, JavaScript y React.js
 2. **Backend:** Node.js, Express, MySQL/PostgreSQL, Firebase y MongoDB
 3. **En el camino:** Muchas librerías y herramientas que permiten hacer aplicaciones de principio a fin.
-4. **En desarrollo de pruebas y scraping:** Trabajamos con Selenium
-5. **En DevOps:** Vemos Docker
+4. **Desarrollo de pruebas y scraping:** Trabajamos con Selenium
+5. **DevOps:** Vemos Docker, Kubernetes y plataformas en la nube para despliegue de las apps (en esta edición Netlify)
 
 ## ¿Qué es Full Stack?
 
@@ -21,7 +21,7 @@ Ser capaces de desarrollar aplicaciones de principio a fin: Desde la UI, hasta t
 
 ## ¿Significa esto que somos expertos sistemas?
 
-No, pero disponemos de conocimientos mínimos para poder realizar diversas tareas por comandos 
+No, pero disponemos de conocimientos mínimos para poder realizar diversas tareas por comandos.
 
 ## ¿Qué sabemos de Bases de Datos?
 
@@ -41,6 +41,7 @@ No, pero disponemos de conocimientos mínimos para poder realizar diversas tarea
 4. Integración de BD en nuestras aplicaciones (con y sin mongoose).
 
 ## ¿Qué necesitamos de Ciber?
-No disponemos de conocimientos de Ciberseguridad y durante el desafío vamos a tener que apoyarnos en ustedes, ya que nos apoyamos en librerías que pueden tener implementaciones poco seguras.
 
-Además, con nuestra ayuda, vamos a desplegar la app desarrollada en Docker y en una máquina gestionada por Ciberseguridad.
+No disponemos de conocimientos de Ciberseguridad y durante el desafío vamos a tener que apoyarnos en ustedes, ya que usamos librerías que pueden tener implementaciones poco seguras.
+
+Además, dada nuestra poca experiencia, nuestras implementaciones pueden ser poco seguras, por lo que trabajaremos codo con codo con Ciber, para mejorar y ampliar nuestros conocimientos.
